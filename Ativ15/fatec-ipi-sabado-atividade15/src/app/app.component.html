@@ -1,0 +1,10 @@
+<app-formulario></app-formulario>
+
+<div class="row">    
+  <div class="col-4" *ngFor="let p of pessoas">
+    <app-card [pessoa]="p"></app-card>
+  </div>    
+</div>
+<footer [ngClass]="obterClassesRodape()">
+  Angular. 2020. Google Inc.
+</footer>
